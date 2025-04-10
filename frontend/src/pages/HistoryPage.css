@@ -1,0 +1,39 @@
+.history-page {
+  padding: 20px;
+  background-image: url("../assets/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+}
+
+  .header {
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .documents-container {
+    padding: 20px;
+    
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .date-group {
+    margin-bottom: 30px;
+  }
+  
+  .date-group .MuiTypography-h6 {
+    margin-bottom: 10px;
+  }
+  
+  .documents-list {
+    display: flex;
+    flex-direction: column;
+  }
+  

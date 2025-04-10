@@ -1,0 +1,163 @@
+/* HomePage.css */
+
+/* Ensure the main container has proper padding */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar styles with spacing */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D2B48C; /* Soft cream background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space below the navbar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #6B3F2D;
+  font-weight: bold;
+}
+
+/* Navbar links */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  font-size: 1.2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6B3F2D;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Main content area with background image */
+.content {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px; /* Fixed height for the content area */
+  width: 100%;
+  color: #6B3F2D;
+  margin-bottom: 40px; /* Space between content and footer */
+}
+
+/* Welcome section */
+.welcome-section,
+.upload-section {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.welcome-section h2,
+.upload-section h3 {
+  font-size: 2.5rem;
+  color: #6B3F2D;
+}
+
+.welcome-section p,
+.upload-section p {
+  font-size: 1.2rem;
+  color: #3E2723;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E0C5A1; /* Beige background */
+  color: #6B3F2D;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for footer */
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer-section {
+  margin: 10px 0;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-section p {
+  font-size: 1rem;
+}
+
+.footer-section a {
+  color: #6B3F2D;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

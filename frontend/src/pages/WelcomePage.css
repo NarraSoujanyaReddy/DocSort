@@ -1,0 +1,112 @@
+/* Updated Welcome Page Styles */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('../assets/background2.jpg') no-repeat center center/cover; /* Professional background */
+  text-align: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+/* Header Styles */
+.welcome-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 500px;
+  
+  width: 500px;
+  margin-right: 10px;
+}
+
+.docsort-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Slight shadow for better visibility */
+}
+
+/* Welcome Content */
+.welcome-content {
+  max-width: 75%; /* Adjusted for better alignment */
+  padding: 20px;
+  margin-top: 50px; /* Space from the logo */
+}
+
+.welcome-quote {
+  font-size: 1.6rem; /* Slightly increased for readability */
+  line-height: 2; /* Improved spacing for legibility */
+  color: #f7f3ed; /* Softer white for better contrast */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}
+
+.quote-highlight {
+  font-size: 2rem; /* Standout size for the highlight */
+  font-weight: bold;
+  color: white; /* Muted gold tone for emphasis */
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.welcome-subtext {
+  font-size: 1rem; /* Smaller subtext for balance */
+  color: white; /* Matches highlight color */
+  margin-top: -0.5rem; /* Slightly closer to the quote */
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Consistent shadow for text */
+}
+
+/* Buttons Styling */
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Increased gap for better spacing */
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 200px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for a lifted effect */
+}
+
+/* Button - Login */
+.btn-login {
+  background-color: #355c7d; /* Deep muted blue for the primary button */
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #457b9d; /* Slightly lighter blue for hover effect */
+  transform: scale(1.05);
+}
+
+/* Button - Sign Up */
+.btn-signup {
+  background-color: #355c7d; /* Same color for consistent branding */
+  color: #fff;
+}
+
+.btn-signup:hover {
+  background-color: #457b9d; /* Matches hover effect of login button */
+  transform: scale(1.05);
+}

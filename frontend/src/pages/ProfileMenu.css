@@ -1,0 +1,99 @@
+
+
+
+/* Header Section */
+.header {
+  background-color: #e8a9b7; /* Pinkish background */
+  position: fixed; /* Fix it at the top of the page */
+  top: 0; /* Position at the very top */
+  left: 0; /* Stretch full width */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end; /* Profile menu to the right */
+  align-items: center; /* Vertically centered */
+  padding: 0 20px; /* Space on the right */
+  z-index: 1000; /* Sit above all other content */
+}
+
+/* Profile Menu */
+.profile-menu {
+  position: relative; /* Parent for dropdown positioning */
+  cursor: pointer;
+  margin-right: 20px; /* Add some space from the right edge */
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-icon {
+  margin-right: 8px;
+  color: #555;
+}
+
+/* Dropdown Menu */
+.menu-dropdown {
+  position: absolute;
+  top: 45px; /* Below the profile name */
+  right: 0; /* Align to the right */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 160px;
+  font-size: 14px;
+  z-index: 1100; /* Ensure dropdown is above other content */
+}
+
+.menu-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-dropdown li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Upload Page Content */
+.upload-page {
+  background-color: #97b6c4; /* Blueish background */
+  min-height: 100vh; /* Full viewport height */
+  padding: 80px 20px 20px; /* Push down content to not overlap header */
+  text-align: center;
+  color: #333;
+}
+
+.upload-buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}

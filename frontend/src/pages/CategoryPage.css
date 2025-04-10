@@ -1,0 +1,211 @@
+.category-page {
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/background2.jpg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+.page-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.file-container {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.file-container.expanded {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.file-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px; /* Reduced margin to bring elements closer */
+  gap: 50px; /* Adjust the gap between the file name and button */
+}
+
+.analysis-button {
+  padding: 5px 10px; /* Adjust button padding */
+  font-size: 0.8em; /* Slightly smaller font */
+  width: auto; 
+  color: #355c7d;/* Automatically size based on content */
+  min-width: 80px; /* Optional: keep a clean size */
+}
+
+
+.file-link {
+  text-decoration: none;
+  color:  #355c7d;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
+
+.file-analysis {
+  margin: 10px auto; /* Centers the grey container */
+  padding: 15px; /* Adds some inner spacing */
+  background-image: url('../assets/background2.jpg') no-repeat center center/cover;
+  border-radius: 6px;
+  color: #555;
+  max-width: 600px; /* Sets a maximum width */
+  width: 90%; /* Makes the container responsive */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+
+
+.analysis-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Adds spacing between items */
+  padding: 10px;
+  /*background-color: #fff; /* White background for contrast */
+  border: 1px solid #ddd; /* Subtle border for definition */
+  border-radius: 8px; /* Smooth rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  background-image: url('../assets/background2.jpg') no-repeat center center/cover;
+}
+
+.analysis-section strong {
+  color:  #355c7d; /* Match your theme */
+  font-size: 1em;
+}
+
+.analysis-section div {
+  display: flex;
+  align-items: center; /* Aligns content vertically */
+  gap: 8px; /* Space between icon and text */
+}
+
+.analysis-section div::before {
+  content: "\1F4D6"; /* Example icon - can replace with a Unicode or custom */
+  font-size: 1.2em; /* Icon size */
+  color:  #355c7d; /* Icon color */
+}
+
+
+.keywords-section strong {
+  display: block; /* Makes the heading take a full line */
+  font-size: 1.2em; /* Slightly larger font size */
+  font-weight: bold; /* Makes it bold */
+  color: #333; /* Darker color for better contrast */
+  margin-bottom: 10px; /* Adds spacing below the heading */
+  text-align: left; /* Aligns the heading to the left */
+}
+
+.keywords-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes padding from the list */
+  margin: 0; /* Removes margin from the list */
+  gap: 10px; /* Adds spacing between items */
+}
+
+
+.keywords-list li {
+  flex: 1 1 calc(50% - 10px); /* Each item takes half the width, minus spacing */
+  text-align: left;
+  padding: 5px 10px; /* Add some padding */
+  background-color: #f8f9fa; /* Light grey background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+
+.keywords-list li:hover {
+  background-color: #e9ecef; /* Slightly darker background on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.analysis-section, .keywords-section {
+  border-bottom: 1px solid #ccc; /* Adds a subtle divider */
+  padding-bottom: 10px; /* Adds spacing below the section */
+  margin-bottom: 15px; /* Adds spacing between sections */
+}
+
+.keywords-section:last-child {
+  border-bottom: none; /* Removes divider for the last section */
+}
+
+
+/* Metrics Overview Section */
+.metric-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.metric-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid Layout for Metrics */
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.metric-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.metric-item strong {
+  color:  #355c7d;
+  font-size: 1.1em;
+}
+
+/* Icons for Metrics */
+.metric-item::before {
+  content: attr(data-icon);
+  font-size: 1.5em;
+  color:  #355c7d;
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .metric-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .metric-item {
+    justify-content: flex-start;
+  }
+}
+
+.no-files-message {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,157 @@
+/* Style for the container holding the form */
+body {
+  background-color:  #f0e1d2; /* Light beige background color */
+  margin: 0; /* Remove default body margin */
+  font-family: Arial, sans-serif; /* Optional: Set a clean font family */
+}
+.settings-container {
+  padding: 30px;
+  max-width: 600px; /* Reduced max-width for form container */
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Updated background color for the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all elements */
+}
+
+/* Center align the heading with new color */
+.settings-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #8a5e3b; /* Updated heading color */
+}
+
+/* Style the form fields (input fields and buttons) */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the form fields */
+  gap: 15px; /* Increased gap between fields */
+  width: 100%;
+  margin-top:20px;
+}
+
+/* Style for individual form fields (Username and Email) */
+.form-field {
+  width: 60%; /* Reduced width of textboxes */
+  max-width: 350px;
+  margin-bottom: 20px;
+  background-color: white; /* Updated background color for Username and Email fields */
+  border: 1px solid #8a5e3b; /* Border color to match design */
+  padding: 10px;
+  /*border-radius: 5px; Slightly rounded corners */
+  /*color: #333; /* Text color for better readability */
+}
+
+/* Button styling for Save Settings */
+.form-button {
+  margin-top: 20px;
+  width: 30%; /* Reduced width of button */
+  max-width: 250px; /* Adjust max-width to reduce button size */
+  background-color: #8a5e3b !important; /* Updated background color for Save Settings button */
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 16px; /* Reduced padding for smaller button */
+  border-radius: 5px; /* Slightly rounded corners for button */
+  font-size: 0.9rem; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Ensure the button is centered */
+}
+
+/* Change background color on hover for Save Settings button */
+.form-button:hover {
+  background-color: #6e472c; /* Darker brown for hover effect */
+}
+
+/* Style for the "Change Password" button */
+.change-password-button {
+  margin-top: 20px; /* Increased space from other elements */
+  width: 30%; /* Reduced width of button */
+  max-width: 250px; /* Adjust max-width for smaller button */
+  text-transform: none;
+  padding: 8px 16px; /* Reduced padding for smaller button */
+  font-size: 0.9rem; /* Smaller font size */
+  background-color: #8a5e3b !important; /* Updated button color */
+  color: white !important;
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners for button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Ensure the button is centered */
+}
+
+/* Change background color on hover with transparency */
+.change-password-button:hover {
+  background-color: rgba(110, 71, 44, 0.7); /* Updated brown with transparency */
+}
+
+/* Styling for the password change dialog */
+.MuiDialog-paper {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Styling for the password change dialog text fields */
+.MuiDialog-paper .MuiTextField-root {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Styling for the input fields of "Change Password" */
+.change-password-textbox {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px; /* Slightly rounded corners for password textboxes */
+  border: 1px solid #8a5e3b; /* Updated border color for Change Password */
+  width: 100%; /* Full width of the container */
+  color: #333; /* Text color updated to black */
+  background-color: #f0e1d2; /* Updated background color for password textboxes */
+}
+
+/* Input field focus effect for Change Password */
+.change-password-textbox:focus {
+  border-color: rgba(110, 71, 44, 0.7); /* Updated focused border color with transparency */
+}
+
+/* Style for error messages */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Custom styling for eye icons */
+.MuiButton-root {
+  padding: 0;
+  min-width: 40px;
+}
+
+.MuiInputAdornment-root button {
+  background-color: transparent;
+  border: none;
+  color: #333; /* Dark color for eye icon */
+}
+
+/* Improve visibility of current password text field */
+.change-password-textbox input {
+  color: #000 !important; /* Ensuring the text is black and clearly visible */
+}
+
+.change-password-textbox label {
+  color: #8a5e3b !important; /* Set label color to match design */
+}
+
+/* Ensure proper visibility of the current password field */
+.MuiInputLabel-root {
+  font-weight: bold; /* Bold the label for better visibility */
+}

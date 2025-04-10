@@ -1,0 +1,44 @@
+/* UnclassifiedPage.css */
+.unclassified-container {
+    padding: 200px;
+    background-color: #f0e1d2;
+    text-align: center;
+  }
+  
+  .unclassified-container h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #4a90e2;
+  }
+  
+  .unclassified-list {
+    margin-bottom: 30px;
+  }
+  
+  .unclassified-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .unclassified-list li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .retry-btn {
+    background-color: #8a5e3b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .retry-btn:hover {
+    background-color: #d3bba4;
+  }
+  
